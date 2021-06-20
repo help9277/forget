@@ -49,7 +49,7 @@ app.get('/forget-password', async (req, res) => {
       to: email,
       subject: "Reset link",
       html: `<h2>PLease click on given link to reset your account</h2>
-            <p>http://localhost:3000/api/changepassword/?token=${token}</p>
+            <a href=`http://localhost:3000/api/changepassword/?token=${token}`></a>
      `,
     };
     try {
